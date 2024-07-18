@@ -23,7 +23,7 @@ public class Tweet {
 	
 	private boolean longitudInvalida(String contenido) {
 		
-		return contenido.length() < CARACTERES_MINIMOS && contenido.length() > CARACTERES_MAXIMOS;
+		return contenido.length() < CARACTERES_MINIMOS || contenido.length() > CARACTERES_MAXIMOS;
 	}
 
 }
