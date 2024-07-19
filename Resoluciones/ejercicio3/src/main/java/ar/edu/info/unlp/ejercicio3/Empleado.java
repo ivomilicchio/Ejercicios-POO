@@ -1,4 +1,4 @@
-package ar.edu.info.unlp.ejercicio1;
+package ar.edu.info.unlp.ejercicio3;
 
 public abstract class Empleado {
 

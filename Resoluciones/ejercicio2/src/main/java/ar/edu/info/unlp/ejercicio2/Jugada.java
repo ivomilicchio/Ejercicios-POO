@@ -1,4 +1,4 @@
-package ar.edu.info.unlp.ejercicio1;
+package ar.edu.info.unlp.ejercicio2;
 
 public interface Jugada {
 	
