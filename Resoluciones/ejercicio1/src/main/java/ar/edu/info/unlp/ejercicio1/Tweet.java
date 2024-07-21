@@ -10,7 +10,7 @@ public class Tweet {
 		
 		if (longitudInvalida(contenido)) {
 			throw new Exception("El contenido del tweet debe tener un mínimo de " + CARACTERES_MINIMOS
-					+ " caracter y un máixmo  de " + CARACTERES_MAXIMOS + " caracteres");
+					+ " caracter y un máximo  de " + CARACTERES_MAXIMOS + " caracteres");
 		}
 		
 		this.contenido = contenido;
