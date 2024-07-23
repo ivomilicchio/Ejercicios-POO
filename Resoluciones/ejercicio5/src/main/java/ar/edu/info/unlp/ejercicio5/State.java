@@ -4,7 +4,6 @@ import java.time.Duration;
 
 public abstract class State {
 	
-	
 	public void start(ToDoItem toDoItem) {
 		
 	}
