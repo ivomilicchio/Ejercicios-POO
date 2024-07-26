@@ -1,4 +1,4 @@
-package ar.edu.info.unlp.ejercicio1;
+package ar.edu.info.unlp.ejercicio6;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
