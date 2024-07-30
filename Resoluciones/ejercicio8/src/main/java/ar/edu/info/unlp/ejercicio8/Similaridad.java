@@ -6,7 +6,8 @@ public class Similaridad implements Sugerencia {
 	
 	public List<Pelicula> getSugerencia(Decodificador decodificador) {
 		
-		return decodificador.sugerenciaSimilares();
+		return decodificador.masRecientesNoVistas().stream().filter
+		(p -> decodificador.contieneSimilarYaVista(p)).limit(3).toList();
 	}
 
 }

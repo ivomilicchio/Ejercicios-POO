@@ -6,7 +6,7 @@ public class Novedad implements Sugerencia {
 	
 	public List<Pelicula> getSugerencia(Decodificador decodificador) {
 		
-		return decodificador.sugerenciaNovedades();
+		return decodificador.masRecientesNoVistas().stream().limit(3).toList();
 	}
 
 }

@@ -56,26 +56,16 @@ public class Decodificador {
 		return peliculas.stream().filter(p -> !yaVista(p)).toList();
 	}
 	
-	private List<Pelicula> masRecientesNoVistas() {
+	public List<Pelicula> masRecientesNoVistas() {
 		
 		return noVistas().stream().sorted(Comparator.comparingInt(
 		Pelicula::getAnoEstreno).reversed()).toList();
 
 	}
 	
-	private boolean contieneSimilarYaVista(Pelicula pelicula) {
+	public boolean contieneSimilarYaVista(Pelicula pelicula) {
 		
 		return pelicula.getSimilares().stream().anyMatch(p -> yaVista(p));
-	}
-	
-	public List<Pelicula> sugerenciaNovedades() {
-		
-		return masRecientesNoVistas().stream().limit(3).toList();
-	}
-	
-	public List<Pelicula> sugerenciaSimilares() {
-		
-		return masRecientesNoVistas().stream().filter(p -> contieneSimilarYaVista(p)).limit(3).toList();
 	}
 	
 	public List<Pelicula> sugerenciaPuntajes() {
